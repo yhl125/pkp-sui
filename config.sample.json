@@ -1,0 +1,10 @@
+{
+  "PRIVATE_KEY": "<your private key. If there is a leading 0x, delete it>",
+  "CONTROLLER_AUTHSIG": {
+    "sig": "",
+    "derivedVia": "",
+    "signedMessage": "",
+    "address": ""
+  },
+  "PKP_PUBKEY": "<your pubkey>"
+}

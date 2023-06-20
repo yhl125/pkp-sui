@@ -1,0 +1,19 @@
+{
+  "name": "pkp-sui",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "scripts": {
+    "start": "TS_NODE_PREFER_TS_EXTS=true ts-node main.ts",
+    "dev": "nodemon --watch . --ext js,ts --exec \"TS_NODE_PREFER_TS_EXTS=true ts-node main.ts\""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@lit-protocol/lit-node-client": "^2.2.26",
+    "@lit-protocol/pkp-base": "^2.2.26",
+    "@lit-protocol/types": "^2.2.26",
+    "@mysten/sui.js": "^0.36.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
+}

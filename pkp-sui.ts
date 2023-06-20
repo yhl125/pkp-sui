@@ -59,7 +59,6 @@ export class PKPSuiWallet extends PKPBase implements Signer {
     const digest = blake2b(data, { dkLen: 32 });
     const msgHash = sha256(digest);
     const signature = await this.runLitAction(msgHash, this.defaultSigName);
-    console.log("Signature: ", signature.signature);
     const numToNByteStr = (num: bigint): string =>
       bytesToHex(numberToBytesBE(num, secp256k1.CURVE.nByteLength));
 
@@ -71,12 +70,7 @@ export class PKPSuiWallet extends PKPBase implements Signer {
       signatureScheme: "Secp256k1",
       pubKey: this.publicKey,
     });
-    console.log("Result: ", result);
     return result;
-  }
-
-  remove0x(hex: string) {
-    return hex.replace(/^0x/, "");
   }
 
   connect(provider: JsonRpcProvider): PKPSuiWallet {

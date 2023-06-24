@@ -1,4 +1,4 @@
-import { PKPSuiWallet } from "./pkp-sui";
+import { PKPSuiWallet } from "./lib/pkp-sui";
 import { LitLogger } from "./utils";
 import { CONTROLLER_AUTHSIG, PKP_PUBKEY, PRIVATE_KEY } from "./config.json";
 import {

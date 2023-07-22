@@ -1,5 +1,13 @@
 # PKPSuiWallet
+NOTE: This repo has been integrated into the [LIT-Protocol/js-sdk](https://github.com/LIT-Protocol/js-sdk)
+merged at [PR#185](https://github.com/LIT-Protocol/js-sdk/pull/185)
 
+## Getting Started
+```
+yarn add @lit-protocol/pkp-sui
+```
+
+### test
 First you need to create config.json file
 ```json
 {
